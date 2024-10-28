@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title"></title>
+    <style type="text/css">
+        span.cls_003{font-family:monospace;font-size:23px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+        div.cls_003{font-family:monospace;font-size:23px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+        span.cls_004{font-family:monospace;font-size:23px;color:#fff;font-weight:bold;font-style:normal;text-decoration: none}
+        div.cls_004{font-family:monospace;font-size:23px;color:rgb(255,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+        span.cls_002{font-family:monospace;font-size:15px;color:rgb(171,7,0);font-weight:bold;font-style:normal;text-decoration: none}
+        div.cls_002{font-family:monospace;font-size:15px;color:rgb(171,7,0);font-weight:bold;font-style:normal;text-decoration: none}
+        span.cls_005{font-family:monospace;font-size:15px;color:black;font-weight:bold;font-style:normal;text-decoration: none}
+        div.cls_005{font-family:monospace;font-size:15px;color:black;font-weight:normal;font-style:normal;text-decoration: none}
+        span.cls_006{font-family:monospace;font-size:15px;color:rgb(171,7,0);font-weight:bold;font-style:normal;text-decoration: none}
+        div.cls_006{font-family:monospace !important;font-size:15px!important;color:rgb(171,7,0);font-weight:bold;font-style:normal;text-decoration: none}
+        span.cls_007{font-family:monospace !important;font: size 16px!important;color:black;font-weight:normal;font-style:normal;text-decoration: none}
+        div.cls_007{font-family:monospace !important;font: size 16px!important;color:black;font-weight:normal;font-style:normal;text-decoration: none}
+        span.cls_008{font-family:monospace !important;font: size 16px!important;color:black;font-weight:normal;font-style:normal;text-decoration: none}
+        div.cls_008{font-family:monospace !important;font: size 16px;color:black;font-weight:normal;font-style:normal;text-decoration: none}
+        span.cls_009{font-family:monospace;font-size:15px;color:#fff;font-weight:normal;font-style:bold;text-decoration: none}
+        div.cls_009{font-family:monospace;font-size:15px;color:rgb(255,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+        span.cls_010{font-family:monospace;font-size:13px;color:black;font-weight:bold;font-style:normal;text-decoration: none}
+        div.cls_010{font-family:monospace;font-size:13px;color:black;font-weight:normal;font-style:normal;text-decoration: none}
+        span.cls_011{font-family:monospace;font-size:15px;color:black;font-weight:bold;font-style:normal;text-decoration: none}
+        div.cls_011{font-family:monospace;font-size:15px;color:black;font-weight:bold;font-style:normal;text-decoration: none}
+        span.cls_012{font-family:monospace;font-size:15px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+        div.cls_012{font-family:monospace;font-size:15px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+    </style>
+</head>
+<body>
+<div id="pdfContent" style="position:absolute; left:50%; top:-65px; margin-left:-400px; width:800px; height:1200px; border-style:outset; overflow:hidden;">
+    <div style="position:absolute; left:0px; top:0px;">
+        <img src="./background.jpg" width="800" height="1200" alt="Background">
+    </div>
+    <div style="position:absolute; left:20px; top:75px;" class="cls_003">
+        <span class="cls_003" style="color:rgb(171,7,0)"> CONTRAT DE LOCATION</span>
+    </div>
+    <div style="text-align:center;position:absolute; left:610px; top:80px;" class="cls_004">
+        <b>STE ASANSO <br>CAR SARL AU</b>
+    </div>
+    <div style="position:absolute; left:300px; top:120px;" class="cls_002">
+        <span class="cls_002">DATE :</span>
+    </div> 
+    <div style="position:absolute; left:300px; top:140px;" class="cls_005">
+        <span class="informations cls_005" onclick="editText(this)">01-01-2024</span>
+    </div>
+    <div style="position:absolute; left:20px; top:120px;" class="cls_002">
+        <span class="cls_002">N° DE FACTURE :</span>
+    </div>
+    <div style="position:absolute; left:20px; top:140px;" class="cls_005">
+        <span class="informations cls_005" onclick="editText(this)">000-12345</span>
+    </div>
+    <div style="position:absolute; left:20px; top:160px;" class="cls_006">
+        <span class="cls_006">DE :</span>
+        <span class="cls_006" onclick="editText(this)">STE ASANSO CAR SARL AU</span>
+    </div>
+    <div style="position:absolute; left:300px; top:160px;" class="cls_006">
+        <span class="cls_006">À  :</span>
+        <span class="cls_006" onclick="editText(this)">Mohamed Yazami 01</span>
+    </div>
+    <div style="position:absolute; left:20px; top:180px;" class="cls_007">
+        <span class="cls_007">ADDRESS:</span>
+    </div>
+    <div style="position:absolute; left:20px; top:200px;" class="cls_007">
+        <span class="informations cls_007" onclick="editText(this)">TAJZIAT ALAMAL N:41 - TARGUIST</span>
+    </div>
+    <div style="position:absolute; left:300px; top:180px;" class="cls_008">
+        <span class="cls_008">CIN :</span>
+        <span class="cls_008" onclick="editText(this)">AB123456</span>
+    </div>
+    <div style="position:absolute; left:300px; top:200px;" class="cls_008">
+        <span class="cls_008">Permis :</span>
+        <span class="cls_008" onclick="editText(this)">B1234567</span>
+    </div>
+    <div style="position:absolute; left:300px; top:220px;" class="cls_008">
+        <span class="cls_008">Né(e) le :</span>
+        <span class="cls_008" onclick="editText(this)">15-05-1980</span>
+    </div>
+    <div style="position:absolute; left:300px; top:240px;" class="cls_008">
+        <span class="cls_008">Né(e) a :</span>
+        <span class="cls_008" onclick="editText(this)">Nador</span>
+    </div>
+    <div style="position:absolute; left:20px; top:220px;" class="cls_007">
+        <span class="cls_008">TÉLE :</span>
+        <span class="cls_008" onclick="editText(this)">0659696320</span>
+    </div>
+    <div style="position:absolute; left:300px; top:260px;" class="cls_008">
+        <span class="cls_008">Address :</span>
+        <span class="cls_008" onclick="editText(this)">Nador</span>
+    </div>
+    <div style="position:absolute; left:20px; top:240px;" class="cls_007">
+        <span class="cls_007">EMAIL : g570fgsm@gmail.com</span>
+    </div>
+    <div style="position:absolute; left:300px; top:280px;" class="cls_008">
+        <span class="cls_008">TÉLE :</span>
+        <span class="cls_008" onclick="editText(this)">0600000000</span>
+    </div>
+    <div style="position:absolute; left:20px; top:450px;" class="cls_010">
+        <span class="informations cls_010" onclick="editText(this)">Sandero Stretway</span>
+    </div>
+    <div style="position:absolute; left:150px; top:450px;" class="cls_010">
+        <span class="informations cls_010" onclick="editText(this)">5421-A-50</span>
+    </div>
+    <div style="position:absolute; left:260px; top:450px;" class="cls_010">
+        <span class="informations cls_010" onclick="editText(this)">10-10-2024</span>
+    </div>
+    <div style="position:absolute; left:400.05px; top:450px;" class="cls_010">
+        <span class="informations cls_010" onclick="editText(this)">20-10-2024</span>
+    </div>
+    <div style="position:absolute; left:550.69px; top:450px;" class="cls_010">
+        <span class="informations cls_010" onclick="editText(this)">1500 DH</span>
+    </div>
+    <div style="position:absolute; left:650.69px; top:450px;" class="cls_010">
+        <span class="informations cls_010" onclick="editText(this)">500 DH</span>
+    </div>
+    <div style="position:absolute; left:20px; top:405px;" class="cls_009">
+        <span class="cls_009">DESCRIPTION</span>
+    </div>
+    <div style="position:absolute; left:150px; top:405px;" class="cls_009">
+        <span class="cls_009">MATRICULE </span>
+    </div>
+    <div style="position:absolute; left:260px; top:405px;" class="cls_009">
+        <span class="cls_009">DATE DE DEPART</span>
+    </div>
+    <div style="position:absolute; left:400px; top:405px;" class="cls_009">
+        <span class="cls_009">DATE DE RETOUR</span>
+    </div>
+    <div style="position:absolute; left:550px; top:405px;" class="cls_009">
+        <span class="cls_009">TOTAL</span>
+    </div>
+    <div style="position:absolute; left:650px; top:405px;" class="cls_009">
+        <span class="cls_009">GARANTIE</span>
+    </div>
+
+    <div style="position:absolute; left:470px; top:580px;" class="cls_011">
+        <span class="cls_011">Prix total :</span>
+    </div>
+    <div style="position:absolute; left:620px; top:580px;" class="cls_011">
+        <span class="cls_011" onclick="editText(this)">1500 DH</span>
+    </div>
+    <div style="position:absolute; left:470px; top:600px;" class="cls_011">
+        <span class="cls_011">Prix jour :</span>
+    </div>
+    <div style="position:absolute; left:620px; top:600px;" class="cls_011">
+        <span class="cls_011" onclick="editText(this)">150 DH</span>
+    </div>
+    <div style="position:absolute; left:470px; top:620px;" class="cls_011">
+        <span class="cls_011">Prix payé :</span>
+    </div>
+    <div style="position:absolute; left:620px; top:620px;" class="cls_011">
+        <span class="cls_011" onclick="editText(this)">1500 DH</span>
+    </div>
+    <div style="position:absolute; left:470px; top:640px;" class="cls_011">
+        <span class="cls_011">payé en :</span>
+    </div>
+    <div style="position:absolute; left:620px; top:640px;" class="cls_011">
+        <span class="cls_011" onclick="editText(this)">Cash</span>
+    </div>
+
+    <div style="position:absolute; left:20px; top:540px;" class="cls_011">
+        <span class="cls_011">Deuxième conducteur :</span>
+    </div>
+    <div style="position:absolute; left:20px; top:570px;" class="cls_011">
+        <span class="cls_011">Nom & Prénom :</span>
+    </div>
+    <div style="position:absolute; left:180px; top:570px;" class="cls_011">
+        <span class="cls_011" onclick="editText(this)">Mohamed Yazami 02</span>
+    </div>
+    <div style="position:absolute; left:20px; top:590px;" class="cls_011">
+        <span class="cls_011">Télé :</span>
+    </div>
+    <div style="position:absolute; left:180px; top:590px;" class="cls_011">
+        <span class="cls_011" onclick="editText(this)">+212611111111</span>
+    </div>
+    <div style="position:absolute; left:20px; top:610px;" class="cls_011">
+        <span class="cls_011">CIN :</span>
+    </div>
+    <div style="position:absolute; left:180px; top:610px;" class="cls_011">
+        <span class="cls_011" onclick="editText(this)">CD789012</span>
+    </div>
+    <div style="position:absolute; left:20px; top:630px;" class="cls_011">
+        <span class="cls_011">Permis :</span>
+    </div>
+    <div style="position:absolute; left:180px; top:630px;" class="cls_011">
+        <span class="cls_011" onclick="editText(this)">C7654321</span>
+    </div>
+
+    <img style="position:absolute; left:5px; top:720.05px;" src="./carForContract.jpg" width="300" height="150" alt="Car Image">
+    <div style="position:absolute; left:350.18px; top:680px;" class="cls_012">
+        <span class="cls_012">Véhicule :</span>
+    </div>
+    <div style="position:absolute; left:470.46px; top:680px;" class="cls_012">
+        <span class="cls_012" onclick="editText(this)">Toyota Corolla</span>
+    </div>
+    <div style="position:absolute; left:350.18px; top:700px;" class="cls_012">
+        <span class="cls_012">Modèle :</span>
+    </div>
+    <div style="position:absolute; left:470.51px; top:700px;" class="cls_012">
+        <span class="cls_012" onclick="editText(this)">Corolla</span>
+    </div>
+    <div style="position:absolute; left:350.18px; top:720px;" class="cls_012">
+        <span class="cls_012">Matricule :</span>
+    </div>
+    <div style="position:absolute; left:470.51px; top:720px;" class="cls_012">
+        <span class="cls_012" onclick="editText(this)">XYZ-1234</span>
+    </div>
+    <div style="position:absolute; left:350.18px; top:740px;" class="cls_012">
+        <span class="cls_012">Couleur :</span>
+    </div>
+    <div style="position:absolute; left:470.51px; top:740px;" class="cls_012">
+        <span class="cls_012" onclick="editText(this)">Red</span>
+    </div>
+
+    <div style="position:absolute; left:350.18px; top:780px;" class="cls_012">
+        <span class="cls_012">Heure début :</span>
+    </div>
+    <div style="position:absolute; left:470.51px; top:780px;" class="cls_012">
+        <span class="cls_012" onclick="editText(this)">08:00</span>
+    </div>
+    <div style="position:absolute; left:350.18px; top:800px;" class="cls_012">
+        <span class="cls_012">Heure fin :</span>
+    </div>
+    <div style="position:absolute; left:470.51px; top:800px;" class="cls_012">
+        <span class="cls_012" onclick="editText(this)">18:00</span>
+    </div>
+    <div style="position:absolute; left:350.18px; top:820px;" class="cls_012">
+        <span class="cls_012">Km départ :</span>
+    </div>
+    <div style="position:absolute; left:470.51px; top:820px;" class="cls_012">
+        <span class="cls_012" onclick="editText(this)">10000</span>
+    </div>
+    <div style="position:absolute; left:350.18px; top:840px;" class="cls_012">
+        <span class="cls_012">Km prévue :</span>
+    </div>
+    <div style="position:absolute; left:470.51px; top:840px;" class="cls_012">
+        <span class="cls_012" onclick="editText(this)">10500</span>
+    </div>
+
+    <div style="position:absolute; left:350.18px; top:900px;" class="cls_012">
+        <span class="cls_012">Durée :</span>
+    </div>
+    <div style="position:absolute; left:470.51px; top:900px;" class="cls_012">
+        <span class="cls_012" onclick="editText(this)">10 Jours</span>
+    </div>
+
+    <div style="position:absolute; left:150px; top:960px;">
+        <span style="font-size:15px">
+            Je, soussigné, déclare par la présente que toutes les informations contenues dans ce contrat sont correctes.
+        </span>
+    </div>
+    <div style="position:absolute; left:67.43px; top:990px;" class="cls_002">
+        <span class="cls_002">SIGNATURE de client:</span>
+    </div>
+    <div style="position:absolute; left:427.76px; top:990px;" class="cls_002">
+        <span class="cls_002">SIGNATURE de location:</span>
+    </div>
+</div>
+
+<script>
+    function editText(element) {
+        const originalText = element.innerText;
+        const input = document.createElement("input");
+        input.type = "text";
+        input.value = originalText;
+        input.style.fontSize = getComputedStyle(element).fontSize;
+        input.style.fontFamily = getComputedStyle(element).fontFamily;
+        input.style.border = "none";  // Remove default border
+        input.style.backgroundColor = "transparent";  // Keep background transparent
+        input.style.color = getComputedStyle(element).color;
+        element.parentNode.replaceChild(input, element);
+
+        input.focus();
+
+        input.addEventListener("blur", function () {
+            const newValue = input.value.trim() || originalText; // Use original if empty
+            const span = document.createElement("span");
+            span.className = element.className; // Keep the original class
+            span.innerText = newValue;
+            span.setAttribute("onclick", "editText(this)"); // Reattach edit functionality
+            input.parentNode.replaceChild(span, input);
+        });
+
+        input.addEventListener("keydown", function (event) {
+            if (event.key === "Enter") {
+                input.blur(); // Trigger blur on Enter
+            }
+        });
+    }
+</script>
+</body>
+</html>
